@@ -24,7 +24,14 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
-    }
+      "supportsTablet": true,
+      "bundleIdentifier": "com.starknewcreat.bethehero"
+    },
+    "android": {
+      "package": "com.starknewcreat.bethehero",
+      "versionCode": 1
+    },
+    "description": "",
+    "githubUrl": "https://github.com/Lucas-fullstack/devLF.git"
   }
 }

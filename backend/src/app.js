@@ -30,13 +30,17 @@
     */
 const express = require('express');
 const cors = require('cors');//Modulo de seguraça de acesso 
+const { errors } = require('celebrate');//reponsavel por validar e tratar erro 500
 const routes = require('./routes'); /***Seleciona arquivo nomesmo nivel de indice para voltar uma pas '../'***/
+
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());/* Recebe Post em formato json*/
 app.use(routes);
+app.use(errors());
 
 
-app.listen(3333);
+//app.listen(3333);
+module.exports = app;
